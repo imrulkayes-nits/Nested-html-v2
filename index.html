@@ -1,11 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Nested html v2</title>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/19796de735.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap">
+
+    <!-- ASSETS FILES -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/scss/responsive.css">
+    <link rel="stylesheet" href="assets/css/scss/main.css">
+
+
 </head>
+
 <body>
-    
+        <!----- START HEADER SECTION ----->
+
+    <header class="header-section">
+        <nav class="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/images/logo.png" alt="logo" class="logo-wrapper">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="navbar navbar-expand-lg menu-bars">
+                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a href="#navbarNav"><i class="fas fa-bars"></i></a>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto menu">
+                                    <li class="nav-item mr-3">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item mx-3">
+                                        <a class="nav-link" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown mx-3">
+                                        <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                                            Services
+                                        </a>
+                                        <ul class="dropdown-menu sub-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                                            <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown mx-3">
+                                        <a class="nav-link" href="#portfolio" id="dropdownMenuLink" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Portfolio
+                                        </a>
+                                        <ul class="dropdown-menu sub-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                                            <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ml-3">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="search-bar">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="promo-title">We Can Transform Every <br>
+                            Digital Process</h1>
+                        <p class="title-describe">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the 
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                        </p>
+                        <div class="banner-btn">
+                            <button type="button" class="btn btnL">Who We Are</button>
+                            <button type="button" class="btn btnR">Get a Quote</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/images/banner-img.png" alt="banner-img" class="d-block ml-auto banner-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----- END HEADER SECTION ----->
+
+    <!----- START ABOUT SECTION ----->
+
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="item-box">
+                        <img class="icon d-block img-fluid mx-auto" src="assets/images/icon0.png" alt="img">
+                        <div class="icon-text">
+                            <h4 class="icon-title">Best Quality</h4>
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting  industry.Lorem Ipsum has been the  industry's standard dummy text  ever since the 1500s,when an  unknown printer took a galley.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>What Great About It</h3>
+                    <p class="title-describe">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the 
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="item-box">
+                        <img class="icon d-block img-fluid mx-auto" src="assets/images/icon1.png" alt="img">
+                        <div class="icon-text">
+                            <h4 class="icon-title">Fast Delivery</h4>
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting  industry.Lorem Ipsum has been the  industry's standard dummy text  ever since the 1500s,when an  unknown printer took a galley.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="item-box box2">
+                        <img class="icon d-block img-fluid mx-auto" src="assets/images/icon2.png" alt="img">
+                        <div class="icon-text">
+                            <h4 class="icon-title">Any Prograce</h4>
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting  industry.Lorem Ipsum has been the  industry's standard dummy text  ever since the 1500s,when an  unknown printer took a galley.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="middle-text">
+                        <i class="fas fa-angle-double-right"></i>
+                        <p>We can live chat with admin and team members 24/7</p>
+                    </div>
+                    <div class="middle-text">
+                        <i class="fas fa-angle-double-right"></i>
+                        <p>We can live chat with admin and team members 24/7</p>
+                    </div>
+                    <div class="middle-text">
+                        <i class="fas fa-angle-double-right"></i>
+                        <p>We can live chat with admin and team members 24/7</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="item-box box2">
+                        <img class="icon d-block img-fluid mx-auto" src="assets/images/icon3.png" alt="img">
+                        <div class="icon-text">
+                            <h4 class="icon-title">24/7 Supprot</h4>
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting  industry.Lorem Ipsum has been the  industry's standard dummy text  ever since the 1500s,when an  unknown printer took a galley.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----- END ABOUT SECTION ----->
+
+    <!----- START SERVICES SECTION ----->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <p class="title-describe">Recognized As Aleading Customer Satisfaction Brand,
+                Our Global customer Support Program.</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="item-box mr-4">
+                        <div class="icon-box rounded-circle">
+                            <div class="item-icon">
+                                <img class="icon img-fluid d-block mx-auto" src="assets/images/service-icon0.png" alt="img">
+                            </div>
+                            <h4 class="icon-title">Domain & Hosting</h4>
+                        </div>
+                        <div class="icon-text">
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-box mr-4">
+                        <div class="icon-box rounded-circle">
+                            <div class="item-icon">
+                                <img class="icon img-fluid d-block mx-auto" src="assets/images/service-icon2.png" alt="img">
+                            </div>
+                            <h4 class="icon-title">Web Design</h4>
+                        </div>
+                        <div class="icon-text">
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-box mr-4">
+                        <div class="icon-box rounded-circle">
+                            <div class="item-icon">
+                                <img class="icon img-fluid d-block mx-auto" src="assets/images/service-icon4.png" alt="img">
+                            </div>
+                            <h4 class="icon-title">Graphic Design</h4>
+                        </div>
+                        <div class="icon-text">
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="item-box ml-4">
+                        <div class="icon-box rounded-circle">
+                            <div class="item-icon">
+                                <img class="icon img-fluid d-block mx-auto" src="assets/images/service-icon1.png" alt="img">
+                            </div>
+                            <h4 class="icon-title">UI/UX Design</h4>
+                        </div>
+                        <div class="icon-text">
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-box ml-4">
+                        <div class="icon-box rounded-circle">
+                            <div class="item-icon">
+                                <img class="icon img-fluid d-block mx-auto" src="assets/images/service-icon3.png" alt="img">
+                            </div>
+                            <h4 class="icon-title">SEO</h4>
+                        </div>
+                        <div class="icon-text">
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-box ml-4">
+                        <div class="icon-box rounded-circle">
+                            <div class="item-icon">
+                                <img class="icon img-fluid d-block mx-auto" src="assets/images/service-icon5.png" alt="img">
+                            </div>
+                            <h4 class="icon-title">Web Development</h4>
+                        </div>
+                        <div class="icon-text">
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!----- END SERVICES SECTION ----->
+
+    <!----- START PORTFOLIO SECTION ----->
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="row">
+                <div class="menu navbar-expand-lg ml-auto">
+                    <ul class="navbar-nav menu-bar mb-5">
+                        <li class="nav-item"><a class="nav-link" href="#">All</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Branding</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Graphic</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Development</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SEO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">UI Design</a></li>
+                    </ul>
+                </div>
+                 
+                <div class="portfolio-slider">
+                    <div class="prev-btn"><i class="fas fa-chevron-circle-left"></i></div>
+                    <div class="slides-container">
+                        <div class="slide-img">
+                            <img src="assets/images/portfolio2.jpg" alt="img">
+                        </div>
+                        <div class="slide-img">
+                            <img src="assets/images/portfolio3.jpg" alt="img">
+                        </div>
+                        <div class="slide-img">
+                            <img src="assets/images/portfolio0.jpg" alt="img">
+                        </div>
+                    </div>
+                    <div class="next-btn"><i class="fas fa-chevron-circle-right"></i></div>
+                </div>
+                <div class="nav-dots">
+                    <div class="single-dot"></div>
+                    <div class="single-dot active"></div>
+                    <div class="single-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----- END PORTFOLIO SECTION ----->
+
+
+    <!----- START BLOG SECTION ----->
+
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <h3>How to Increase Your Roi Through Scientifi SEM?</h3>
+                    <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy 
+                        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    <div class="blog-btn">
+                        <a href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+                        <i class="fa fa-angle-left"></i>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <div class="blog-right-col">
+                        <img src="assets/images/portfolio3.jpg" class="d-block img-fluid blog-img" alt="img">
+                        <p class="mt-2"><span class="mr-2"><i class="fas fa-calendar-alt calendar"></i></span>june 16, 2020</p>
+                        <div class="blog-text-right">
+                            <h3>How to Increase Your Roi Through Scientifi SEM?</h3>
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            <div class="blog-btn">
+                                <a href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <div class="blog-right-col">
+                        <img src="assets/images/portfolio7.jpg" class="d-block img-fluid blog-img" alt="img">
+                        <p class="mt-2"><span class="mr-2"><i class="fas fa-calendar-alt calendar"></i></span>june 16, 2020</p>
+                        <div class="blog-text-right">
+                            <h3>How to Increase Your Roi Through Scientifi SEM?</h3>
+                            <p class="little-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            <div class="blog-btn">
+                                <a href="#">Read More<i class="fas fa-angle-double-right"></i></a>
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!----- END BLOG SECTION ----->
+
+
+    <!----- START CONTACT SECTION ----->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+
+    <!----- END CONTACT SECTION ----->
+    <!----- START SERVICES SECTION ----->
+  
+
+
+
+
+
+
+
+    <!-- JS links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
 </body>
+
 </html>
