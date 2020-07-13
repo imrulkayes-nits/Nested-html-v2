@@ -42,9 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn:hover {
   color: #ffffff;
-  border: .01rem solid #ffffff;
-  background: -webkit-gradient(linear, left bottom, left top, from(#da5f5f55), to(#f06262));
-  background: linear-gradient(to top, #da5f5f55, #f06262);
+  border: .01rem solid aqua;
+  background: #e64040;
 }
 
 .section-title {
@@ -124,20 +123,20 @@ header {
   background: #e64040;
 }
 
-/*----- logo wrapper -----*/
+/*=== Logo wrapper ===*/
 .logo-wrapper {
   width: 20rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
-/*----- menu-bars -----*/
+/*=== Menu Bars ===*/
 .menu-bars {
   position: relative;
 }
 
 .menu-bars .menu .nav-item {
-  margin-top: 5.7rem;
-  /*----- sub menu -----*/
+  margin-top: 3.7rem;
+  /*=== Sub Menu ===*/
 }
 
 .menu-bars .menu .nav-item:hover .sub-menu {
@@ -173,25 +172,41 @@ header {
   transition: width .3s;
 }
 
+.menu-bars .menu .nav-item .active::before {
+  content: '';
+  display: block;
+  width: 70%;
+  height: .3rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #ffffff;
+}
+
+.menu-bars .menu .nav-item .sub-menu {
+  padding: 0;
+  margin: 0;
+}
+
 .menu-bars .menu .nav-item .sub-menu a {
   color: #615f5f;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  padding: .5rem .8rem;
+  padding: .8rem .8rem;
   margin: 0;
   text-transform: capitalize;
 }
 
 .menu-bars .menu .nav-item .sub-menu a:hover {
-  color: #615f5f;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 93, 93, 0.6)), to(rgba(240, 98, 98, 0.9)));
-  background: linear-gradient(to bottom, rgba(238, 93, 93, 0.6), rgba(240, 98, 98, 0.9));
+  color: #ffffff;
+  background: #e64040;
+  border: 0.1rem solid aqua;
 }
 
-/*----- search-bar -----*/
+/*=== search-bar ===*/
 .search-bar {
-  margin-top: 6.7rem;
+  margin-top: 4.7rem;
   position: relative;
 }
 
@@ -202,7 +217,7 @@ header {
   left: 40%;
 }
 
-/*----- banner -----*/
+/*=== banner ===*/
 .banner {
   position: relative;
 }
@@ -219,7 +234,14 @@ header {
 }
 
 .banner .banner-btn .btnL {
-  margin-right: 7rem;
+  margin-right: 6rem;
+  color: #ffffff;
+  background: #e64040;
+  border: 0.1rem solid aqua;
+}
+
+.banner .banner-btn .btnL:hover {
+  border: 0.1rem solid #ffffff;
 }
 
 .banner .banner-img {
@@ -230,10 +252,6 @@ header {
 /*====================================*/
 /*=  ABOUT SECTION  =*/
 /*====================================*/
-.about-section {
-  background: #ffffff;
-}
-
 .about-section .item-box:hover {
   -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.1), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.1), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
@@ -358,6 +376,11 @@ header {
 /*====================================*/
 /*=  PORTFOLIO SECTION  =*/
 /*====================================*/
+.portfolio-section {
+  /*=== Portfolio Menu ===*/
+  /*=== Portfolio Slider ===*/
+}
+
 .portfolio-section .menu .menu-bar .nav-item .nav-link {
   color: #000000;
   font-size: 1.5rem;
@@ -378,40 +401,32 @@ header {
   border-bottom: solid #e64040 .3rem;
 }
 
-.portfolio-section .img-item .box img {
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.3), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.29);
-          box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.3), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.29);
-}
-
-/*====================================*/
-/*=  PORTFOLIO SECTION  =*/
-/*====================================*/
-.portfolio-slider {
+.portfolio-section .portfolio-slider {
   width: 100%;
   position: relative;
-  /*  Nav Dots    */
+  /*=== Nav Button ===*/
+  /*=== Nav Dots ===*/
 }
 
-.portfolio-slider .slides-container {
+.portfolio-section .portfolio-slider .slides-container {
   height: 40rem;
   position: relative;
 }
 
-.portfolio-slider .slides-container .slide-img {
+.portfolio-section .portfolio-slider .slides-container .slide-img {
   height: 100%;
   position: absolute;
 }
 
-.portfolio-slider .slides-container .slide-img img {
+.portfolio-section .portfolio-slider .slides-container .slide-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.portfolio-slider .next-btn,
-.portfolio-slider .prev-btn {
+.portfolio-section .portfolio-slider .next-btn,
+.portfolio-section .portfolio-slider .prev-btn {
   background: #ffffff;
   padding: 1rem;
   position: absolute;
@@ -425,15 +440,15 @@ header {
   z-index: 100;
 }
 
-.portfolio-slider .prev-btn {
+.portfolio-section .portfolio-slider .prev-btn {
   left: 0;
 }
 
-.portfolio-slider .next-btn {
+.portfolio-section .portfolio-slider .next-btn {
   right: 0;
 }
 
-.portfolio-slider .nav-dots {
+.portfolio-section .portfolio-slider .nav-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,7 +464,7 @@ header {
   position: relative;
 }
 
-.portfolio-slider .nav-dots .single-dot {
+.portfolio-section .portfolio-slider .nav-dots .single-dot {
   width: 2rem;
   height: 2rem;
   color: #e64040;
@@ -466,7 +481,9 @@ header {
 /*= BLOG SECTION  =*/
 /*====================================*/
 .blog-section {
+  /*=== Blog 1st colum ===*/
   margin-bottom: 3rem;
+  /*=== Blog 2nd colum ===*/
 }
 
 .blog-section h3 {
@@ -512,6 +529,7 @@ header {
   font-weight: 600;
   float: right;
   line-height: 2.6;
+  margin-right: 5rem;
 }
 
 .blog-section .blog-right-col .blog-img {

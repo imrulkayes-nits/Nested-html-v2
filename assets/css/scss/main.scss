@@ -7,8 +7,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 html {
     font-size: 62.5%;
 }
@@ -17,7 +15,6 @@ body{
     font-size: 1.4rem;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-
 }
  section {
      padding: 6rem 0;
@@ -25,13 +22,11 @@ body{
 /*====================================*/
         /*=  REUSALE COMPONANTS  =*/
 /*====================================*/
-
 $bg-color: linear-gradient(to top, #da5f5f55, #f06262);
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
-
 .btn {
     font-size: 1.4rem;
     font-weight: 600;
@@ -40,11 +35,10 @@ h1, h2, h3, h4, h5, h6 {
     background: #ffffff;
     border-radius: .5rem;
     padding: 1rem 3rem;
-
     &:hover {
         color: #ffffff;
-        border: .01rem solid #ffffff;
-        background: $bg-color;
+        border: .01rem solid aqua;
+        background: #e64040;
     } 
 }
 .section-title {
@@ -54,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #000000;
     padding-bottom: 6rem;
-
     &::after {
         content: '';
         display: block;
@@ -79,7 +72,6 @@ h1, h2, h3, h4, h5, h6 {
         font-family: 'Open Sans', sans-serif;
         margin-top: 1.5rem;
     }
-
 }
 .little-description {
     font-size: 1.4rem;
@@ -109,7 +101,6 @@ h3 {
     color: #000000;
     margin-top: 2rem;
 }
-
 /*====================================*/
         /*=  HEADER SECTION  =*/
 /*====================================*/
@@ -118,17 +109,17 @@ header {
     height: 100vh;
     background: #e64040;
 }
-/*----- logo wrapper -----*/
+/*=== Logo wrapper ===*/
 .logo-wrapper {
     width: 20rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
-/*----- menu-bars -----*/
+/*=== Menu Bars ===*/
 .menu-bars {
     position: relative;
     .menu {
         .nav-item {
-            margin-top: 5.7rem;
+            margin-top: 3.7rem;
             &:hover .sub-menu {
                 display: block;
             }
@@ -157,29 +148,41 @@ header {
                     transition: width .3s;
                 }
             }
-            /*----- sub menu -----*/
+            .active::before {
+                content: '';
+                display: block;
+                width: 70%;
+                height: .3rem;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: #ffffff;
+            }
+            /*=== Sub Menu ===*/
             .sub-menu {
+                padding: 0;
+                margin: 0;
                 a {
                     color: #615f5f;
-                    font-size: 1.4rem;
+                    font-size: 1.5rem;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 600;
-                    padding: .5rem .8rem;
+                    padding: .8rem .8rem;
                     margin: 0;
                     text-transform: capitalize;
-
                     &:hover {
-                        color: #615f5f;
-                        background: linear-gradient(to bottom, rgba(238, 93, 93, 0.6), rgba(240, 98, 98, 0.9));
+                        color: #ffffff;
+                        background: #e64040;
+                        border: 0.1rem solid aqua;
                     }
                 }
             }
         }
     }
 }
-/*----- search-bar -----*/
+/*=== search-bar ===*/
 .search-bar {
-    margin-top: 6.7rem;
+    margin-top: 4.7rem;
     position: relative;
     .fa-search {
         font-size: 2rem;
@@ -188,7 +191,7 @@ header {
         left: 40%;
     }
 }
-/*----- banner -----*/
+/*=== banner ===*/
 .banner {
     position: relative;
     .promo-title {
@@ -200,7 +203,13 @@ header {
     .banner-btn {
         margin-top: 5rem;
         .btnL {
-            margin-right: 7rem;
+            margin-right: 6rem;
+            color: #ffffff;
+            background: #e64040;
+            border: 0.1rem solid aqua;
+            &:hover {
+                border: 0.1rem solid #ffffff;
+            }
         }
     }
     .banner-img {
@@ -212,7 +221,6 @@ header {
         /*=  ABOUT SECTION  =*/
 /*====================================*/
 .about-section {
-    background: #ffffff;
     .item-box {
         &:hover {
             box-shadow:  0 .4rem .8rem 0 rgba(0, 0, 0, 0.1), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
@@ -234,7 +242,6 @@ header {
         color: #615f5f;
         margin-top: 3rem;
         padding-right: 7rem;
-       
     }
     .middle-text {
         padding: 0 3rem;
@@ -276,24 +283,19 @@ header {
         height: 25rem;
         box-shadow:  0 .4rem .8rem 0 rgba(0, 0, 0, 0.1), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
         border-radius: 1rem;
- 
-
         &:hover {
             color: #ffffff;
             background: linear-gradient(to bottom, #e13f3f, #9a2b2b);
             transition: background-color 5s ease-out;
-
             .icon-box {
                 color: #615f5f;
                 background: #e64040;
-
                 .icon-title {
                     color: #ffffff;
                     background: #e64040;
                 }
             }
         }
-
         .icon-box {
             float: left;
             padding: 1rem;
@@ -301,7 +303,6 @@ header {
             height: 20rem;
             background: #ffffff;
             box-shadow:  0 .4rem .8rem 0 rgba(0, 0, 0, 0.1), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
-
             .item-icon {
                 .icon {
                     width: 6rem;               
@@ -327,8 +328,8 @@ header {
 /*====================================*/
         /*=  PORTFOLIO SECTION  =*/
 /*====================================*/
-
 .portfolio-section {
+    /*=== Portfolio Menu ===*/
     .menu {
         .menu-bar {
             .nav-item {
@@ -340,12 +341,10 @@ header {
                     padding: .3rem 1.5rem;
                     margin: 0;
                     border-bottom: solid #615f5f .3rem;
-
                     &:hover {
                         color: #e64040;
                         border-bottom: solid #e64040 .3rem;
                     }
-
                 }
                 .active {
                     color: #e64040;
@@ -354,82 +353,62 @@ header {
             }
         }
     }
-
-    .img-item {
-        .box {
-            img {
-                border-radius: 1rem;
-                box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.3), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.29);
-              
-            }
-        }
-    }
-}
-
-/*====================================*/
-        /*=  PORTFOLIO SECTION  =*/
-/*====================================*/
-
-.portfolio-slider {
-    width: 100%;
-    position: relative;
-
-    .slides-container {
-        height: 40rem;
+    /*=== Portfolio Slider ===*/
+    .portfolio-slider {
+        width: 100%;
         position: relative;
-
-        .slide-img {
-            height: 100%;
-            position: absolute;
-
-            img {
-                width: 100%;
+        .slides-container {
+            height: 40rem;
+            position: relative;
+            .slide-img {
                 height: 100%;
-                object-fit: cover;
+                position: absolute;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
-    }
-
-    .next-btn,
-    .prev-btn {
-        background: #ffffff;
-        padding: 1rem;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 2rem;
-        cursor: pointer;
-        transition: 400ms;
-        z-index: 100;
-    }
-    .prev-btn {
-        left: 0;
-    }
-    .next-btn {
-        right: 0;
-    }
-
-    /*  Nav Dots    */
-    .nav-dots {
-        display: flex;
-        width: 3rem;
-        height: 3rem;
-        align-items: center;
-        justify-content: center;
-        margin: 1.6rem 0;
-        position: relative;
-     
-        .single-dot {
-            width: 2rem;
-            height: 2rem;
-            color: #e64040;
-            background: #333333;
-            border: .3rem solid #000;
-            border-radius: 50%;
-            transition: 400ms;
+        /*=== Nav Button ===*/
+        .next-btn,
+        .prev-btn {
+            background: #ffffff;
+            padding: 1rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
             cursor: pointer;
-            margin: 0 1rem;
-
+            transition: 400ms;
+            z-index: 100;
+        }
+        .prev-btn {
+            left: 0;
+        }
+        .next-btn {
+            right: 0;
+        }
+        /*=== Nav Dots ===*/
+        .nav-dots {
+            display: flex;
+            width: 3rem;
+            height: 3rem;
+            align-items: center;
+            justify-content: center;
+            margin: 1.6rem 0;
+            position: relative;
+            .single-dot {
+                width: 2rem;
+                height: 2rem;
+                color: #e64040;
+                background: #333333;
+                border: .3rem solid #000;
+                border-radius: 50%;
+                transition: 400ms;
+                cursor: pointer;
+                margin: 0 1rem;
+            }
         }
     }
 }
@@ -437,11 +416,11 @@ header {
         /*= BLOG SECTION  =*/
 /*====================================*/
 .blog-section {
+    /*=== Blog 1st colum ===*/
     margin-bottom: 3rem;
     h3 {
         font-size: 2.8rem;
         margin: 0;
-
     }
     .little-description {
         text-align: left;
@@ -451,7 +430,6 @@ header {
         padding-left: 0;
         margin-top: 5rem !important;
         line-height: 3.6;
-
     }
     .blog-btn {
         a {
@@ -478,9 +456,10 @@ header {
             font-weight: 600;
             float: right;
             line-height: 2.6;
-          
+            margin-right: 5rem;
         }
     }
+    /*=== Blog 2nd colum ===*/
     .blog-right-col {
         .blog-img {
             border-radius: 1rem;
@@ -502,7 +481,6 @@ header {
                 font-size: 1.2rem;
                 margin-top: 3rem !important;
                 padding: 0;
-                
             }
         }
         .blog-btn {
@@ -514,5 +492,4 @@ header {
             }
         }
     }
-
 }
