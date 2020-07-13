@@ -516,11 +516,11 @@ header {
 }
 
 .blog-section .blog-btn a:hover {
-  color: #333333;
+  color: aqua;
 }
 
 .blog-section .blog-btn a:hover .fas {
-  color: #333333;
+  color: #00ffff8a !important;
 }
 
 .blog-section .blog-btn .fa-angle-left {
