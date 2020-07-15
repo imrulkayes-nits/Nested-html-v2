@@ -48,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #000000;
     padding-bottom: 6rem;
+    margin-top: 5rem;
     &::after {
         content: '';
         display: block;
@@ -104,17 +105,26 @@ h3 {
 /*====================================*/
         /*=  HEADER SECTION  =*/
 /*====================================*/
-
 header {
     height: 100vh;
     background: #e64040;
 }
-/*=== Logo wrapper ===*/
+/*----- Logo wrapper -----*/
 .logo-wrapper {
     width: 20rem;
     margin-top: 3rem;
 }
-/*=== Menu Bars ===*/
+/*---- Navbar Fixed -----*/
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 1rem;
+    background: #e64040;
+    z-index: 200;
+}
+/*----- Menu Bars -----*/
 .menu-bars {
     position: relative;
     .menu {
@@ -131,7 +141,6 @@ header {
                 padding: .3rem .5rem;
                 text-transform: uppercase;
                 position: relative;
-
                 &::before {
                     content: '';
                     display: block;
@@ -158,7 +167,7 @@ header {
                 bottom: 0;
                 background: #ffffff;
             }
-            /*=== Sub Menu ===*/
+            /*----- Sub Menu -----*/
             .sub-menu {
                 padding: 0;
                 margin: 0;
@@ -180,7 +189,7 @@ header {
         }
     }
 }
-/*=== search-bar ===*/
+/*----- search-bar -----*/
 .search-bar {
     margin-top: 4.7rem;
     position: relative;
@@ -191,9 +200,10 @@ header {
         left: 40%;
     }
 }
-/*=== banner ===*/
+/*----- banner -----*/
 .banner {
     position: relative;
+    padding-top: 10.5rem;
     .promo-title {
         font-size: 4rem;
         font-weight: 700;
@@ -326,10 +336,10 @@ header {
     }
 }
 /*====================================*/
-        /*=  PORTFOLIO SECTION  =*/
+/*----- PORTFOLIO SECTION -----*/
 /*====================================*/
-.portfolio-section {
-    /*=== Portfolio Menu ===*/
+ /*----- Portfolio Menu -----*/
+ .portfolio-section {
     .menu {
         .menu-bar {
             .nav-item {
@@ -353,7 +363,9 @@ header {
             }
         }
     }
-    /*=== Portfolio Slider ===*/
+}
+/*----- Portfolio Slider -----*/
+.portfolio-section {
     .portfolio-slider {
         width: 100%;
         position: relative;
@@ -370,7 +382,7 @@ header {
                 }
             }
         }
-        /*=== Nav Button ===*/
+        /*----- Nav Button -----*/
         .next-btn,
         .prev-btn {
             background: #ffffff;
@@ -389,7 +401,11 @@ header {
         .next-btn {
             right: 0;
         }
-        /*=== Nav Dots ===*/
+    }
+}
+/*----- Nav Dots -----*/
+.portfolio-section {
+.portfolio-slider {
         .nav-dots {
             display: flex;
             width: 3rem;
@@ -413,11 +429,11 @@ header {
     }
 }
 /*====================================*/
-        /*= BLOG SECTION  =*/
+/*----- BLOG SECTION -----*/
 /*====================================*/
+ /*----- 1st colum -----*/
 .blog-section {
-    /*=== Blog 1st colum ===*/
-    margin-bottom: 3rem;
+    background: #f1dcdc;
     h3 {
         font-size: 2.8rem;
         margin: 0;
@@ -459,7 +475,9 @@ header {
             margin-right: 5rem;
         }
     }
-    /*=== Blog 2nd colum ===*/
+}
+ /*----- 2nd colum -----*/
+.blog-section {
     .blog-right-col {
         .blog-img {
             border-radius: 1rem;
@@ -493,3 +511,129 @@ header {
         }
     }
 }
+/*====================================*/
+/*----- CONTACT SECTION -----*/
+/*====================================*/
+/*----- 1st Colum -----*/
+.contact-section {
+    background: #fbe3e3;
+    .social-media {
+        width: 40%;
+        text-align: left;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        .media-item {
+            list-style: none;
+            &:hover a{
+                color: 	#BA0000;
+            }
+            &:hover .fa-facebook-f{
+                color: #ffffff;
+                background: #4267b2;
+            }
+            &:hover .fa-twitter{
+                color: #ffffff;
+                background: #03a9f4;
+            }
+            &:hover .fa-google-plus-g{
+                color: #ffffff;
+                background: #dc4e41;
+            }
+            &:hover .fa-instagram{
+                color: #ffbeb6;
+                background: #ea4968;
+            }
+
+
+            .fab {
+                font-size: 2.4rem;
+                margin: 1rem;
+            }
+            .fa-facebook-f {
+                color: #4267b2;
+                padding: .5rem 1rem;
+                border-radius: .5rem;
+            }
+            .fa-twitter {
+                color: #03a9f4;
+                padding: .5rem .8rem;
+                border-radius: .5rem;
+            }
+            .fa-google-plus-g {
+                color: #dc4e41;
+                font-size: 2.4rem;
+                padding: .5rem .5rem;
+                border-radius: .5rem;
+            }
+            .fa-instagram {
+                color: #ea4968;
+                padding: .5rem .8rem;
+                border-radius: .5rem;
+            }
+            a {
+                text-decoration: none;
+                color: #8e8585;
+                font-size: 1.6;
+                font-weight: 600;
+            }
+        }
+    }
+}
+/*----- 2nd Colum -----*/
+.contact-section {
+    .contact-form {
+        background: #ffffff;
+        border-radius: 2rem;
+        form {
+            width: 100%;
+            padding: 3rem;
+            margin-top: 3.5rem;
+            transition: all 4s ease-in-out;
+            .form-control {
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: #333333;
+                text-align: left;
+                border: none;
+                outline: none;
+                font-family: 'Poppins', sans-serif;
+                background: transparent;
+                line-height: 1.6 !important;
+                border-bottom: 0.3rem solid #b3b3b3;
+                margin-top: 5rem;
+                height: 4rem;
+            }
+            .name {
+                margin: 0;
+                padding: 0;
+            }
+            .text-area {
+                .message {
+                    border: 0.1rem solid #707070;
+                    margin-top: 5rem;
+                    font-size: 1.4rem;
+                    padding: .8rem;
+                    height: 6rem;
+                }
+                .submit {
+                    background: #942929;
+                    color: #ffffff;
+                    width: 10rem;
+                    border: none;
+                    text-transform: uppercase;
+                    padding: 0.5rem 1.5rem !important;
+                    text-align: center;
+                    margin-top: 3rem;
+                    border-radius: 2rem;
+                    line-height: 1.4 !important;
+                    &:hover {
+                        background: #ef5b5b;
+                    }
+                }
+            }
+        }
+    }
+}
+/*====================================*/
+/*----- FOOTER SECTION -----*/
+/*====================================*/

@@ -1,4 +1,17 @@
 
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 60) {
+        //clearHeader, not clearheader - caps H
+        $(".navigation").addClass("header-sticky");
+    }
+    else {
+        $(".navigation").removeClass("header-sticky");
+    }
+}); //missing );
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:30,
@@ -28,7 +41,7 @@ const singleDot = document.querySelector(".single-dot");
 function init() {
     
 
-    slideImg.forEach((img, i) => { 
+    slideImg.forEach((img, i) => {
 
     }
     )
