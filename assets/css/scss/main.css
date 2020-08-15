@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .title-describe {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #ffffff;
   letter-spacing: .1rem;
   line-height: 1.6;
@@ -126,8 +126,8 @@ header {
 
 /*----- Logo wrapper -----*/
 .logo-wrapper {
-  width: 20rem;
-  margin-top: 3rem;
+  width: 100%;
+  margin-top: 2.5rem;
 }
 
 /*---- Navbar Fixed -----*/
@@ -138,7 +138,7 @@ header {
   right: 0;
   padding-bottom: 1rem;
   background: #e64040;
-  z-index: 200;
+  z-index: 100000;
 }
 
 /*----- Menu Bars -----*/
@@ -147,7 +147,7 @@ header {
 }
 
 .menu-bars .menu .nav-item {
-  margin-top: 3.7rem;
+  margin-top: 3.2rem;
   /*----- Sub Menu -----*/
 }
 
@@ -156,9 +156,9 @@ header {
 }
 
 .menu-bars .menu .nav-item .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   color: #ffffff;
   padding: .3rem .5rem;
   text-transform: uppercase;
@@ -169,13 +169,13 @@ header {
   content: '';
   display: block;
   width: 0;
-  height: .3rem;
+  height: .2rem;
   -webkit-transition: width .3s;
   transition: width .3s;
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #ffffff;
+  background: #ffffffbc;
 }
 
 .menu-bars .menu .nav-item .nav-link:hover::before {
@@ -188,37 +188,58 @@ header {
   content: '';
   display: block;
   width: 70%;
-  height: .3rem;
+  height: .2rem;
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #ffffff;
+  background: #ffffffbc;
 }
 
 .menu-bars .menu .nav-item .sub-menu {
   padding: 0;
-  margin: 0;
+  margin: 0 .5rem;
+  background: #dddada;
 }
 
-.menu-bars .menu .nav-item .sub-menu a {
-  color: #615f5f;
-  font-size: 1.5rem;
+.menu-bars .menu .nav-item .sub-menu .dropdown-item {
+  color: #000;
+  font-size: 1.4rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   padding: .8rem .8rem;
   margin: 0;
   text-transform: capitalize;
+  background: #dddada;
+  cursor: pointer;
 }
 
-.menu-bars .menu .nav-item .sub-menu a:hover {
-  color: #ffffff;
-  background: #e64040;
-  border: 0.1rem solid aqua;
+.menu-bars .menu .nav-item .sub-menu .dropdown-item:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+.menu-bars .menu .nav-item .sub-menu .dropdown-item::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: .2rem;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #f50b0b;
+}
+
+.menu-bars .menu .nav-item .sub-menu .dropdown-item:hover::before {
+  width: 100%;
+  -webkit-transition: width .5s;
+  transition: width .5s;
 }
 
 /*----- search-bar -----*/
 .search-bar {
-  margin-top: 4.7rem;
+  margin-top: 4.2rem;
   position: relative;
 }
 
@@ -237,7 +258,7 @@ header {
 
 .banner .promo-title {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #ffffff;
   margin-top: 10rem;
 }

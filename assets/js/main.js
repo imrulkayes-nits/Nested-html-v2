@@ -29,20 +29,11 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-const slidesContainer = document.querySelector(".slides-container");
-const slideImg = document.querySelectorAll(".slide-img");
-const nextBtn = document.querySelector (".next-btn");
-const prevBtn = document.querySelector(".prev-btn");
-const navDots = document.querySelector(".nav-dots");
-const singleDot = document.querySelector(".single-dot");
+//const slidesContainer = document.querySelector(".slides-container");
+//const slideImg = document.querySelectorAll(".slide-img");
+//const nextBtn = document.querySelector (".next-btn");
+//const prevBtn = document.querySelector(".prev-btn");
+//const navDots = document.querySelector(".nav-dots");
+//const singleDot = document.querySelector(".single-dot");
 
 // Setup The Slider
-
-function init() {
-    
-
-    slideImg.forEach((img, i) => {
-
-    }
-    )
-}

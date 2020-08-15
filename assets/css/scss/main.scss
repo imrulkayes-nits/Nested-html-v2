@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .title-describe {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #ffffff;
     letter-spacing: .1rem;
     line-height: 1.6;
@@ -108,11 +108,12 @@ h3 {
 header {
     height: 100vh;
     background: #e64040;
+   
 }
 /*----- Logo wrapper -----*/
 .logo-wrapper {
-    width: 20rem;
-    margin-top: 3rem;
+    width: 100%;
+    margin-top: 2.5rem;
 }
 /*---- Navbar Fixed -----*/
 .navigation {
@@ -122,21 +123,21 @@ header {
     right: 0;
     padding-bottom: 1rem;
     background: #e64040;
-    z-index: 200;
+    z-index: 100000;
 }
 /*----- Menu Bars -----*/
 .menu-bars {
     position: relative;
     .menu {
         .nav-item {
-            margin-top: 3.7rem;
+            margin-top: 3.2rem;
             &:hover .sub-menu {
                 display: block;
             }
             .nav-link {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                font-weight: 400;
                 color: #ffffff;
                 padding: .3rem .5rem;
                 text-transform: uppercase;
@@ -145,12 +146,12 @@ header {
                     content: '';
                     display: block;
                     width: 0;
-                    height: .3rem;
+                    height: .2rem;
                     transition: width .3s;
                     position: absolute;
                     left: 0;
                     bottom: 0;
-                    background: #ffffff;
+                    background: #ffffffbc;
                 }
                 &:hover::before {
                     width: 70%;
@@ -161,28 +162,45 @@ header {
                 content: '';
                 display: block;
                 width: 70%;
-                height: .3rem;
+                height: .2rem;
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                background: #ffffff;
+                background: #ffffffbc;
             }
             /*----- Sub Menu -----*/
             .sub-menu {
                 padding: 0;
-                margin: 0;
-                a {
-                    color: #615f5f;
-                    font-size: 1.5rem;
+                margin: 0 .5rem;
+                background: #dddada;
+                .dropdown-item {
+                    color: #000;
+                    font-size: 1.4rem;
                     font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
+                    font-weight: 400;
                     padding: .8rem .8rem;
                     margin: 0;
                     text-transform: capitalize;
+                    background: #dddada;
+                    cursor: pointer;
                     &:hover {
-                        color: #ffffff;
-                        background: #e64040;
-                        border: 0.1rem solid aqua;
+                        color: #000000;
+                        background: #ffffff;
+                    }
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: .2rem;
+                        transition: width .5s;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background: #f50b0b;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                        transition: width .5s;
                     }
                 }
             }
@@ -191,13 +209,14 @@ header {
 }
 /*----- search-bar -----*/
 .search-bar {
-    margin-top: 4.7rem;
+    margin-top: 4.2rem;
     position: relative;
     .fa-search {
         font-size: 2rem;
         color: #ffffff;
         position: absolute;
         left: 40%;
+      
     }
 }
 /*----- banner -----*/
@@ -206,7 +225,7 @@ header {
     padding-top: 10.5rem;
     .promo-title {
         font-size: 4rem;
-        font-weight: 700;
+        font-weight: 600;
         color: #ffffff;
         margin-top: 10rem;
     }
